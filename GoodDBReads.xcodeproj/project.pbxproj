@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5472AB8C1DF4E8AD00268F94 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB8B1DF4E8AD00268F94 /* Book.swift */; };
+		5472AB8E1DF4EAE500268F94 /* BookScrollViewWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */; };
+		5472AB911DF4F09A00268F94 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB901DF4F09A00268F94 /* Rate.swift */; };
+		54C047331DF381C200B75CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047321DF381C200B75CF9 /* AppDelegate.swift */; };
+		54C047351DF381C200B75CF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047341DF381C200B75CF9 /* FirstViewController.swift */; };
+		54C047371DF381C200B75CF9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047361DF381C200B75CF9 /* SecondViewController.swift */; };
+		54C0473A1DF381C200B75CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C047381DF381C200B75CF9 /* Main.storyboard */; };
+		54C0473C1DF381C200B75CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C0473B1DF381C200B75CF9 /* Assets.xcassets */; };
+		54C0473F1DF381C200B75CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C0473D1DF381C200B75CF9 /* LaunchScreen.storyboard */; };
+		54C0474A1DF381C200B75CF9 /* GoodDBReadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047491DF381C200B75CF9 /* GoodDBReadsTests.swift */; };
+		54C047551DF381C200B75CF9 /* GoodDBReadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047541DF381C200B75CF9 /* GoodDBReadsUITests.swift */; };
+		7465760B866FD2907D81C11A /* Pods_GoodDBReads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66135B815B6C4D48B247499B /* Pods_GoodDBReads.framework */; };
+		7A603406ABEC75267C7DE64A /* libPods-GoodDBReadsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C275D8AC3AAC181CCDADC86 /* libPods-GoodDBReadsTests.a */; };
+		ADC05102598519FD167239F0 /* libPods-GoodDBReadsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FBF6C74C8D0917DFDFF063 /* libPods-GoodDBReadsUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C047461DF381C200B75CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C047271DF381C200B75CF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C0472E1DF381C200B75CF9;
+			remoteInfo = GoodDBReads;
+		};
+		54C047511DF381C200B75CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C047271DF381C200B75CF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C0472E1DF381C200B75CF9;
+			remoteInfo = GoodDBReads;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15FBF6C74C8D0917DFDFF063 /* libPods-GoodDBReadsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodDBReadsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5472AB8B1DF4E8AD00268F94 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScrollViewWidget.swift; sourceTree = "<group>"; };
+		5472AB901DF4F09A00268F94 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		54C0472F1DF381C200B75CF9 /* GoodDBReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodDBReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C047321DF381C200B75CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54C047341DF381C200B75CF9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		54C047361DF381C200B75CF9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		54C047391DF381C200B75CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54C0473B1DF381C200B75CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54C0473E1DF381C200B75CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54C047401DF381C200B75CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C047451DF381C200B75CF9 /* GoodDBReadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodDBReadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C047491DF381C200B75CF9 /* GoodDBReadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodDBReadsTests.swift; sourceTree = "<group>"; };
+		54C0474B1DF381C200B75CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C047501DF381C200B75CF9 /* GoodDBReadsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodDBReadsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C047541DF381C200B75CF9 /* GoodDBReadsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodDBReadsUITests.swift; sourceTree = "<group>"; };
+		54C047561DF381C200B75CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66135B815B6C4D48B247499B /* Pods_GoodDBReads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodDBReads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D34766D6A7A9C915FFBD83 /* Pods-GoodDBReads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReads.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReads/Pods-GoodDBReads.release.xcconfig"; sourceTree = "<group>"; };
+		784E44F78477F98D28B9861A /* Pods-GoodDBReadsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReadsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReadsUITests/Pods-GoodDBReadsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87A2FB911B11B55E59530B10 /* Pods-GoodDBReadsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReadsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReadsTests/Pods-GoodDBReadsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D6E0C568CF9F17CF85BA500 /* Pods-GoodDBReadsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReadsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReadsTests/Pods-GoodDBReadsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C275D8AC3AAC181CCDADC86 /* libPods-GoodDBReadsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodDBReadsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB4900B43656C62DE872CED /* Pods-GoodDBReads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReads/Pods-GoodDBReads.debug.xcconfig"; sourceTree = "<group>"; };
+		E75A1A5C4E01A60BDA6A4068 /* Pods-GoodDBReadsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodDBReadsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodDBReadsUITests/Pods-GoodDBReadsUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54C0472C1DF381C200B75CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7465760B866FD2907D81C11A /* Pods_GoodDBReads.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C047421DF381C200B75CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A603406ABEC75267C7DE64A /* libPods-GoodDBReadsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C0474D1DF381C200B75CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC05102598519FD167239F0 /* libPods-GoodDBReadsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4D00E06784BA894D4ED57C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66135B815B6C4D48B247499B /* Pods_GoodDBReads.framework */,
+				9C275D8AC3AAC181CCDADC86 /* libPods-GoodDBReadsTests.a */,
+				15FBF6C74C8D0917DFDFF063 /* libPods-GoodDBReadsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5472AB8A1DF4E8A400268F94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5472AB8B1DF4E8AD00268F94 /* Book.swift */,
+				5472AB901DF4F09A00268F94 /* Rate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5472AB8F1DF4EAEA00268F94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		54C047261DF381C200B75CF9 = {
+			isa = PBXGroup;
+			children = (
+				54C047311DF381C200B75CF9 /* GoodDBReads */,
+				54C047481DF381C200B75CF9 /* GoodDBReadsTests */,
+				54C047531DF381C200B75CF9 /* GoodDBReadsUITests */,
+				54C047301DF381C200B75CF9 /* Products */,
+				F8F9857DC8651FC0FD194678 /* Pods */,
+				0F4D00E06784BA894D4ED57C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54C047301DF381C200B75CF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C0472F1DF381C200B75CF9 /* GoodDBReads.app */,
+				54C047451DF381C200B75CF9 /* GoodDBReadsTests.xctest */,
+				54C047501DF381C200B75CF9 /* GoodDBReadsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C047311DF381C200B75CF9 /* GoodDBReads */ = {
+			isa = PBXGroup;
+			children = (
+				5472AB8A1DF4E8A400268F94 /* Models */,
+				54C047321DF381C200B75CF9 /* AppDelegate.swift */,
+				54C047341DF381C200B75CF9 /* FirstViewController.swift */,
+				54C047361DF381C200B75CF9 /* SecondViewController.swift */,
+				54C047381DF381C200B75CF9 /* Main.storyboard */,
+				54C0473B1DF381C200B75CF9 /* Assets.xcassets */,
+				54C0473D1DF381C200B75CF9 /* LaunchScreen.storyboard */,
+				54C047401DF381C200B75CF9 /* Info.plist */,
+				5472AB8F1DF4EAEA00268F94 /* Views */,
+			);
+			path = GoodDBReads;
+			sourceTree = "<group>";
+		};
+		54C047481DF381C200B75CF9 /* GoodDBReadsTests */ = {
+			isa = PBXGroup;
+			children = (
+				54C047491DF381C200B75CF9 /* GoodDBReadsTests.swift */,
+				54C0474B1DF381C200B75CF9 /* Info.plist */,
+			);
+			path = GoodDBReadsTests;
+			sourceTree = "<group>";
+		};
+		54C047531DF381C200B75CF9 /* GoodDBReadsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54C047541DF381C200B75CF9 /* GoodDBReadsUITests.swift */,
+				54C047561DF381C200B75CF9 /* Info.plist */,
+			);
+			path = GoodDBReadsUITests;
+			sourceTree = "<group>";
+		};
+		F8F9857DC8651FC0FD194678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB4900B43656C62DE872CED /* Pods-GoodDBReads.debug.xcconfig */,
+				75D34766D6A7A9C915FFBD83 /* Pods-GoodDBReads.release.xcconfig */,
+				87A2FB911B11B55E59530B10 /* Pods-GoodDBReadsTests.debug.xcconfig */,
+				8D6E0C568CF9F17CF85BA500 /* Pods-GoodDBReadsTests.release.xcconfig */,
+				784E44F78477F98D28B9861A /* Pods-GoodDBReadsUITests.debug.xcconfig */,
+				E75A1A5C4E01A60BDA6A4068 /* Pods-GoodDBReadsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54C0472E1DF381C200B75CF9 /* GoodDBReads */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C047591DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReads" */;
+			buildPhases = (
+				69EBB6EE6355A05A227EAA7B /* [CP] Check Pods Manifest.lock */,
+				54C0472B1DF381C200B75CF9 /* Sources */,
+				54C0472C1DF381C200B75CF9 /* Frameworks */,
+				54C0472D1DF381C200B75CF9 /* Resources */,
+				20B994D7E49A6E0C0A83CF0C /* [CP] Embed Pods Frameworks */,
+				90180E2146D758BBC12B90DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodDBReads;
+			productName = GoodDBReads;
+			productReference = 54C0472F1DF381C200B75CF9 /* GoodDBReads.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54C047441DF381C200B75CF9 /* GoodDBReadsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C0475C1DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReadsTests" */;
+			buildPhases = (
+				C34CB74032AE0E097863702B /* [CP] Check Pods Manifest.lock */,
+				54C047411DF381C200B75CF9 /* Sources */,
+				54C047421DF381C200B75CF9 /* Frameworks */,
+				54C047431DF381C200B75CF9 /* Resources */,
+				6375A10364845FA7EC3CDD92 /* [CP] Embed Pods Frameworks */,
+				B3330B2186763CB74689BB84 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C047471DF381C200B75CF9 /* PBXTargetDependency */,
+			);
+			name = GoodDBReadsTests;
+			productName = GoodDBReadsTests;
+			productReference = 54C047451DF381C200B75CF9 /* GoodDBReadsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54C0474F1DF381C200B75CF9 /* GoodDBReadsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C0475F1DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReadsUITests" */;
+			buildPhases = (
+				A556AA50F610FD21E59B324C /* [CP] Check Pods Manifest.lock */,
+				54C0474C1DF381C200B75CF9 /* Sources */,
+				54C0474D1DF381C200B75CF9 /* Frameworks */,
+				54C0474E1DF381C200B75CF9 /* Resources */,
+				9C4F45E6D5BB4336A66C0A1A /* [CP] Copy Pods Resources */,
+				7CC992BE52DFCBF3A5CA6F5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C047521DF381C200B75CF9 /* PBXTargetDependency */,
+			);
+			name = GoodDBReadsUITests;
+			productName = GoodDBReadsUITests;
+			productReference = 54C047501DF381C200B75CF9 /* GoodDBReadsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54C047271DF381C200B75CF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Huiting Yu";
+				TargetAttributes = {
+					54C0472E1DF381C200B75CF9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FJCR5KV53T;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					54C047441DF381C200B75CF9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FJCR5KV53T;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54C0472E1DF381C200B75CF9;
+					};
+					54C0474F1DF381C200B75CF9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FJCR5KV53T;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54C0472E1DF381C200B75CF9;
+					};
+				};
+			};
+			buildConfigurationList = 54C0472A1DF381C200B75CF9 /* Build configuration list for PBXProject "GoodDBReads" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54C047261DF381C200B75CF9;
+			productRefGroup = 54C047301DF381C200B75CF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C0472E1DF381C200B75CF9 /* GoodDBReads */,
+				54C047441DF381C200B75CF9 /* GoodDBReadsTests */,
+				54C0474F1DF381C200B75CF9 /* GoodDBReadsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54C0472D1DF381C200B75CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C0473F1DF381C200B75CF9 /* LaunchScreen.storyboard in Resources */,
+				54C0473C1DF381C200B75CF9 /* Assets.xcassets in Resources */,
+				54C0473A1DF381C200B75CF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C047431DF381C200B75CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C0474E1DF381C200B75CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B994D7E49A6E0C0A83CF0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReads/Pods-GoodDBReads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6375A10364845FA7EC3CDD92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReadsTests/Pods-GoodDBReadsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69EBB6EE6355A05A227EAA7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CC992BE52DFCBF3A5CA6F5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReadsUITests/Pods-GoodDBReadsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90180E2146D758BBC12B90DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReads/Pods-GoodDBReads-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4F45E6D5BB4336A66C0A1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReadsUITests/Pods-GoodDBReadsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A556AA50F610FD21E59B324C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3330B2186763CB74689BB84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodDBReadsTests/Pods-GoodDBReadsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34CB74032AE0E097863702B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54C0472B1DF381C200B75CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5472AB8C1DF4E8AD00268F94 /* Book.swift in Sources */,
+				54C047371DF381C200B75CF9 /* SecondViewController.swift in Sources */,
+				54C047331DF381C200B75CF9 /* AppDelegate.swift in Sources */,
+				5472AB911DF4F09A00268F94 /* Rate.swift in Sources */,
+				54C047351DF381C200B75CF9 /* FirstViewController.swift in Sources */,
+				5472AB8E1DF4EAE500268F94 /* BookScrollViewWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C047411DF381C200B75CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C0474A1DF381C200B75CF9 /* GoodDBReadsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C0474C1DF381C200B75CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C047551DF381C200B75CF9 /* GoodDBReadsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C047471DF381C200B75CF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C0472E1DF381C200B75CF9 /* GoodDBReads */;
+			targetProxy = 54C047461DF381C200B75CF9 /* PBXContainerItemProxy */;
+		};
+		54C047521DF381C200B75CF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C0472E1DF381C200B75CF9 /* GoodDBReads */;
+			targetProxy = 54C047511DF381C200B75CF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54C047381DF381C200B75CF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C047391DF381C200B75CF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54C0473D1DF381C200B75CF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C0473E1DF381C200B75CF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54C047571DF381C200B75CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54C047581DF381C200B75CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C0475A1DF381C200B75CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB4900B43656C62DE872CED /* Pods-GoodDBReads.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReads/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		54C0475B1DF381C200B75CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D34766D6A7A9C915FFBD83 /* Pods-GoodDBReads.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReads/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		54C0475D1DF381C200B75CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A2FB911B11B55E59530B10 /* Pods-GoodDBReadsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReadsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReadsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodDBReads.app/GoodDBReads";
+			};
+			name = Debug;
+		};
+		54C0475E1DF381C200B75CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6E0C568CF9F17CF85BA500 /* Pods-GoodDBReadsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReadsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReadsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodDBReads.app/GoodDBReads";
+			};
+			name = Release;
+		};
+		54C047601DF381C200B75CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784E44F78477F98D28B9861A /* Pods-GoodDBReadsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReadsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReadsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoodDBReads;
+			};
+			name = Debug;
+		};
+		54C047611DF381C200B75CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75A1A5C4E01A60BDA6A4068 /* Pods-GoodDBReadsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FJCR5KV53T;
+				INFOPLIST_FILE = GoodDBReadsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReadsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoodDBReads;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54C0472A1DF381C200B75CF9 /* Build configuration list for PBXProject "GoodDBReads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C047571DF381C200B75CF9 /* Debug */,
+				54C047581DF381C200B75CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C047591DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C0475A1DF381C200B75CF9 /* Debug */,
+				54C0475B1DF381C200B75CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C0475C1DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReadsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C0475D1DF381C200B75CF9 /* Debug */,
+				54C0475E1DF381C200B75CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C0475F1DF381C200B75CF9 /* Build configuration list for PBXNativeTarget "GoodDBReadsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C047601DF381C200B75CF9 /* Debug */,
+				54C047611DF381C200B75CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54C047271DF381C200B75CF9 /* Project object */;
+}
