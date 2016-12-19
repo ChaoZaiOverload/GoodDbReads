@@ -11,7 +11,7 @@ import Alamofire
 import WebKit
 import SWXMLHash
 
-class FirstViewController: UIViewController, WKNavigationDelegate {
+class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollViewWidgetDelegate {
 
   var webView: WKWebView!
   
@@ -31,12 +31,9 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    
     let myURL = URL(string: "https://www.goodreads.com")
     let myRequest = URLRequest(url: myURL!)
     webView.load(myRequest)
-    
-    
   }
   
   public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
@@ -74,6 +71,11 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
       
       
     }*/
+  }
+  public func didSelectBook(book: Book) {
+    if let svc = self.tabBarController?.viewControllers?[0] as? SecondViewController {
+      svc.loadPage(book: book)
+    }
   }
   
   private func getBookFromGoodreads(bookId: String) {
@@ -131,7 +133,10 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
   }
 
   private func showBooksInScrollView(books: [Book]) {
-    
+    let widget = Bundle.main.loadNibNamed("BookScrollViewWidget", owner: nil, options: nil)?[0] as! BookScrollViewWidget
+    widget.set(books: books)
+    widget.frame.origin = CGPoint(x: 0, y: self.view.frame.height-widget.frame.size.height)
+    self.view.addSubview(widget)
   }
 
 }

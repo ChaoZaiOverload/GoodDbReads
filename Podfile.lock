@@ -1,21 +1,26 @@
 PODS:
   - Alamofire (4.2.0)
   - FLEX (2.4.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SnapKit (3.0.2)
   - SWXMLHash (3.0.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - FLEX (~> 2.0)
+  - SDWebImage (~> 3.8)
   - SnapKit (~> 3.0.2)
   - SWXMLHash (~> 3.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SWXMLHash: 80d2529d74891bb2f15305a0b9e08f2a4f229ee7
 
-PODFILE CHECKSUM: c787f4e5ba1918bed7c62759a5786629097b6e0a
+PODFILE CHECKSUM: a1b6c83fe3872a54f1e6fbc910111e636a327adc
 
 COCOAPODS: 1.2.0.beta.1

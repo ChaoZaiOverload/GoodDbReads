@@ -21,10 +21,13 @@ class Book {
   
   init?(JSON: [String:Any]?) {
     guard let jtitle = JSON?["title"] as? String,
-          let jAuthor = (JSON?["author"] as? [String])?[0],
-    let jImgUrl = (JSON?["images"] as? [String: Any])?["small"] as? URL,
+          let jAuthor = (JSON?["author"] as? [String])?.first,
+    let jImgUrlStr = (JSON?["images"] as? [String: Any])?["small"] as? String,
+      let jImgUrl = URL(string: jImgUrlStr),
     let jRate = Rate(JSON: JSON?["rating"] as? [String : Any]),
-      let jURL = JSON?["url"] as? URL else {
+      let jURLStr = JSON?["url"] as? String,
+      let jURL = URL(string: jURLStr)
+      else {
         return nil
     }
     self.title = jtitle

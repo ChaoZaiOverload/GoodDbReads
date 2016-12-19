@@ -13,6 +13,7 @@ target 'GoodDBReads' do
   pod 'SnapKit', '~> 3.0.2'
   pod 'Alamofire', '~> 4.0'
   pod 'SWXMLHash', '~> 3.0.0'
+  pod 'SDWebImage', '~>3.8'
   end
 
   target 'GoodDBReadsTests' do
