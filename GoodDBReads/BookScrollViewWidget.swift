@@ -19,13 +19,18 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
   @IBOutlet var closeButton: UIButton!
   
   var books: [Book]? = nil
+    
+  var borderlayer = CALayer()
   
   var delegate: BookScrollViewWidgetDelegate?
   
   let bookCellId = "bookPreviewCellIdentifier"
   override func awakeFromNib() {
     super.awakeFromNib()
+    
     self.collectionView.register(UINib(nibName: "BookPreviewCell", bundle: nil), forCellWithReuseIdentifier: bookCellId)
+  
+    self.layer.addSublayer(borderlayer)
   }
   
 
@@ -40,6 +45,8 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
   
   override func layoutSubviews() {
     super.layoutSubviews()
+    borderlayer.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 1)
+    borderlayer.backgroundColor = UIColor.gray.cgColor
   }
   
   //data source
@@ -53,14 +60,18 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
     let cell: BookPreviewCell = collectionView.dequeueReusableCell(withReuseIdentifier: bookCellId, for: indexPath) as! BookPreviewCell
     let book = self.books![indexPath.row]
     cell.nameLabel.text = book.title
-    cell.ratingLabel.text = "\(book.rate?.rate) // from \(book.rate?.numOfRate)"
+    if let rate = book.rate?.rate.description, let rateNum = book.rate?.numOfRate.description {
+        cell.ratingLabel.text = "\(rate) / \(rateNum) rates"
+    } else {
+        cell.ratingLabel.text = "no ratings"
+    }
     if let bookImg = book.smallImage {
       cell.imageView.image = bookImg
     } else {
       cell.imageView.image = UIImage(named: "book_placeholder")
       if let imageUrl = book.smallImageUrl {
         let imageManager = SDWebImageManager.shared()
-        imageManager?.downloadImage(with: imageUrl, options: [] , progress: { (retrievedSize, expectedSize) in
+        let _ = imageManager?.downloadImage(with: imageUrl, options: [] , progress: { (retrievedSize, expectedSize) in
           
         }, completed: { (image, error, cacheType, isFinished, url) in
           if let image = image {

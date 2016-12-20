@@ -135,7 +135,8 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   private func showBooksInScrollView(books: [Book]) {
     let widget = Bundle.main.loadNibNamed("BookScrollViewWidget", owner: nil, options: nil)?[0] as! BookScrollViewWidget
     widget.set(books: books)
-    widget.frame.origin = CGPoint(x: 0, y: self.view.frame.height-widget.frame.size.height)
+    let bottomBarOffset = self.bottomLayoutGuide.length + 2
+    widget.frame.origin = CGPoint(x: 0, y: self.view.frame.height-bottomBarOffset-widget.frame.size.height)
     self.view.addSubview(widget)
   }
 

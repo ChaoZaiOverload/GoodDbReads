@@ -15,7 +15,7 @@ class Rate {
   var rate: Double = 0
   
   init?(JSON: [String:Any]?) {
-    guard let max = JSON?["max"] as? Int, let min = JSON?["min"] as? Int, let avg = JSON?["average"] as? Double, let numRaters = JSON?["numRaters"] as? Int else {
+    guard let max = JSON?["max"] as? Int, let min = JSON?["min"] as? Int, let avgStr = JSON?["average"] as? String, let avg = Double(avgStr), let numRaters = JSON?["numRaters"] as? Int else {
       return nil
     }
     self.numOfRate = numRaters
