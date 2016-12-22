@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188E78AF1E0BA0BB00EAB155 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E78AE1E0BA0BB00EAB155 /* WebViewContainer.swift */; };
 		5472AB8C1DF4E8AD00268F94 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB8B1DF4E8AD00268F94 /* Book.swift */; };
 		5472AB8E1DF4EAE500268F94 /* BookScrollViewWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */; };
 		5472AB911DF4F09A00268F94 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB901DF4F09A00268F94 /* Rate.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		15FBF6C74C8D0917DFDFF063 /* libPods-GoodDBReadsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodDBReadsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188E78AE1E0BA0BB00EAB155 /* WebViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
 		5472AB8B1DF4E8AD00268F94 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookScrollViewWidget.swift; sourceTree = "<group>"; };
 		5472AB901DF4F09A00268F94 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */,
 				5494A3891DF91F1D00931735 /* BookPreviewCell.swift */,
 				5494A38D1DF91F8400931735 /* BookPreviewCell.xib */,
+				188E78AE1E0BA0BB00EAB155 /* WebViewContainer.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				54C047331DF381C200B75CF9 /* AppDelegate.swift in Sources */,
 				5472AB911DF4F09A00268F94 /* Rate.swift in Sources */,
 				54C047351DF381C200B75CF9 /* FirstViewController.swift in Sources */,
+				188E78AF1E0BA0BB00EAB155 /* WebViewContainer.swift in Sources */,
 				5494A38A1DF91F1D00931735 /* BookPreviewCell.swift in Sources */,
 				5472AB8E1DF4EAE500268F94 /* BookScrollViewWidget.swift in Sources */,
 			);

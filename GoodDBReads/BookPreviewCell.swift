@@ -14,4 +14,12 @@ class BookPreviewCell: UICollectionViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var ratingLabel: UILabel!
   
+  func selectedState(selected: Bool) {
+    if selected {
+      self.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1)
+    } else {
+      self.backgroundColor = UIColor.clear
+    }
+  }
+  
 }

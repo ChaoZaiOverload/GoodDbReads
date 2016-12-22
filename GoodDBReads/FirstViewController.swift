@@ -11,30 +11,21 @@ import Alamofire
 import WebKit
 import SWXMLHash
 
-class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollViewWidgetDelegate {
+class FirstViewController: UIViewController, WebViewContainerDelegate, BookScrollViewWidgetDelegate {
 
     
   //var widget = Bundle.main.loadNibNamed("BookScrollViewWidget", owner: nil, options: nil)?[0] as! BookScrollViewWidget
 
     @IBOutlet var widgetView: BookScrollViewWidget!
-    @IBOutlet var webViewContainer: UIView!
+    @IBOutlet var webViewContainer: WebViewContainer!
     
-    var webView = WKWebView()
     
     var url: URL?
     
   override func viewDidLoad() {
     super.viewDidLoad()
  
-    
-    webViewContainer.backgroundColor = UIColor.clear
-    
-    
-    webView.navigationDelegate = self
-    webViewContainer.addSubview(webView)
-    
-    webView.frame.origin = CGPoint(x: 0, y: 0)
-    webView.frame.size = webViewContainer.frame.size
+    webViewContainer.delegate = self
     
     widgetView.backgroundColor = UIColor.clear
     widgetView.isHidden = true
@@ -50,20 +41,15 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   
   override func viewWillAppear(_ animated: Bool) {
     if self.url == nil{
-      let myURL = URL(string: "https://www.goodreads.com")
-      let myRequest = URLRequest(url: myURL!)
-      webView.load(myRequest)
+      let myURL = URL(string: "https://www.goodreads.com/book/show/19506.The_World_as_Will_and_Representation_Vol_1")
+      webViewContainer.load(url: myURL)
+
       self.url = myURL
     }
   }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    
-    webView.frame.origin = CGPoint(x: 0, y: 0)
-    webView.frame.size = webViewContainer.frame.size
-    
-    
   }
     
   public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
@@ -106,10 +92,15 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   }
   
   // BookScrollViewWidgetDelegate
-  public func didSelectBook(book: Book) {
+  func didSelectBook(book: Book) {
     if let svc = self.tabBarController?.viewControllers?[1] as? SecondViewController {
       svc.loadPage(book: book)
     }
+  }
+  
+  func didDismiss(widget: BookScrollViewWidget) {
+    widgetView.isHidden = true
+    self.view.setNeedsLayout()
   }
   
   private func getBookFromGoodreads(bookId: String) {
@@ -169,6 +160,7 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   private func showBooksInScrollView(books: [Book]) {
     widgetView.set(books: books)
     widgetView.isHidden = false
+    self.view.setNeedsLayout()
   }
   
 

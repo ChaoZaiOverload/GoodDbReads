@@ -13,12 +13,37 @@ import SnapKit
 
 protocol BookScrollViewWidgetDelegate {
   func didSelectBook(book: Book)
+  func didDismiss(widget: BookScrollViewWidget)
 }
 class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDataSource  {
   @IBOutlet var collectionView: UICollectionView!
   @IBOutlet var closeButton: UIButton!
   
   var books: [Book]? = nil
+  
+  private var _selectedRowIndex: Int? = nil
+  var selectedRowIndex: Int?{
+    get {
+      return _selectedRowIndex
+    }
+    set {
+      if _selectedRowIndex == newValue {
+        return
+      }
+      let oldValue = _selectedRowIndex
+      _selectedRowIndex = newValue
+      
+      if oldValue != nil {
+        self.collectionView.reloadItems(at:[IndexPath(row: oldValue!, section: 0)] )
+      }
+      
+      if let newValue = newValue {
+        self.collectionView.reloadItems(at:[IndexPath(row: newValue, section: 0)] )
+
+      }
+      
+    }
+  }
     
   var borderlayer = CALayer()
   
@@ -80,17 +105,23 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
         })
       }
     }
+    if(indexPath.row == self._selectedRowIndex) {
+      cell.selectedState(selected: true)
+    } else {
+      cell.selectedState(selected: false)
+    }
     return cell
   }
   
   //delegate
   public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    self.selectedRowIndex = indexPath.row
     let book = self.books![indexPath.row]
     self.delegate?.didSelectBook(book: book)
   }
   
   @IBAction func closeButtonTapped(sender: UIButton) {
-    
+    self.delegate?.didDismiss(widget: self)
   }
   
   
