@@ -40,7 +40,7 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
   
   func set(books: [Book]) {
     self.books = books
-    self.setNeedsLayout()
+    self.collectionView.reloadData()
   }
   
   override func layoutSubviews() {
@@ -90,6 +90,7 @@ class BookScrollViewWidget: UIView, UICollectionViewDelegate, UICollectionViewDa
   }
   
   @IBAction func closeButtonTapped(sender: UIButton) {
+    
   }
   
   

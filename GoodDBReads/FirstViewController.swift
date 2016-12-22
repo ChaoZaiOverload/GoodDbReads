@@ -13,14 +13,32 @@ import SWXMLHash
 
 class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollViewWidgetDelegate {
 
-  var webView: WKWebView!
-  
+    
+  //var widget = Bundle.main.loadNibNamed("BookScrollViewWidget", owner: nil, options: nil)?[0] as! BookScrollViewWidget
+
+    @IBOutlet var widgetView: BookScrollViewWidget!
+    @IBOutlet var webViewContainer: UIView!
+    
+    var webView = WKWebView()
+    
+    var url: URL?
+    
   override func viewDidLoad() {
     super.viewDidLoad()
+ 
     
-    webView = WKWebView(frame: self.view.frame)
+    webViewContainer.backgroundColor = UIColor.clear
+    
+    
     webView.navigationDelegate = self
-    self.view.addSubview(webView)
+    webViewContainer.addSubview(webView)
+    
+    webView.frame.origin = CGPoint(x: 0, y: 0)
+    webView.frame.size = webViewContainer.frame.size
+    
+    widgetView.backgroundColor = UIColor.clear
+    widgetView.isHidden = true
+    widgetView.delegate = self
 
     // Do any additional setup after loading the view, typically from a nib.
   }
@@ -31,16 +49,30 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    let myURL = URL(string: "https://www.goodreads.com")
-    let myRequest = URLRequest(url: myURL!)
-    webView.load(myRequest)
+    if self.url == nil{
+      let myURL = URL(string: "https://www.goodreads.com")
+      let myRequest = URLRequest(url: myURL!)
+      webView.load(myRequest)
+      self.url = myURL
+    }
   }
   
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    webView.frame.origin = CGPoint(x: 0, y: 0)
+    webView.frame.size = webViewContainer.frame.size
+    
+    
+  }
+    
   public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
     
     defer {
       decisionHandler(.allow)
     }
+    
+    self.url = navigationAction.request.url
     
     guard let url = navigationAction.request.url?.absoluteString else {
       return
@@ -72,8 +104,10 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
       
     }*/
   }
+  
+  // BookScrollViewWidgetDelegate
   public func didSelectBook(book: Book) {
-    if let svc = self.tabBarController?.viewControllers?[0] as? SecondViewController {
+    if let svc = self.tabBarController?.viewControllers?[1] as? SecondViewController {
       svc.loadPage(book: book)
     }
   }
@@ -133,12 +167,10 @@ class FirstViewController: UIViewController, WKNavigationDelegate, BookScrollVie
   }
 
   private func showBooksInScrollView(books: [Book]) {
-    let widget = Bundle.main.loadNibNamed("BookScrollViewWidget", owner: nil, options: nil)?[0] as! BookScrollViewWidget
-    widget.set(books: books)
-    let bottomBarOffset = self.bottomLayoutGuide.length + 2
-    widget.frame.origin = CGPoint(x: 0, y: self.view.frame.height-bottomBarOffset-widget.frame.size.height)
-    self.view.addSubview(widget)
+    widgetView.set(books: books)
+    widgetView.isHidden = false
   }
+  
 
 }
 

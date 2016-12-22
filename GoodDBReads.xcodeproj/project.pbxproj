@@ -12,7 +12,6 @@
 		5472AB911DF4F09A00268F94 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472AB901DF4F09A00268F94 /* Rate.swift */; };
 		5494A38A1DF91F1D00931735 /* BookPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494A3891DF91F1D00931735 /* BookPreviewCell.swift */; };
 		5494A38E1DF91F8400931735 /* BookPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5494A38D1DF91F8400931735 /* BookPreviewCell.xib */; };
-		5494A3901DFE722600931735 /* BookScrollViewWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5494A38F1DFE722600931735 /* BookScrollViewWidget.xib */; };
 		54C047331DF381C200B75CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047321DF381C200B75CF9 /* AppDelegate.swift */; };
 		54C047351DF381C200B75CF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047341DF381C200B75CF9 /* FirstViewController.swift */; };
 		54C047371DF381C200B75CF9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C047361DF381C200B75CF9 /* SecondViewController.swift */; };
@@ -50,7 +49,6 @@
 		5472AB901DF4F09A00268F94 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		5494A3891DF91F1D00931735 /* BookPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPreviewCell.swift; sourceTree = "<group>"; };
 		5494A38D1DF91F8400931735 /* BookPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookPreviewCell.xib; sourceTree = "<group>"; };
-		5494A38F1DFE722600931735 /* BookScrollViewWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookScrollViewWidget.xib; sourceTree = "<group>"; };
 		54C0472F1DF381C200B75CF9 /* GoodDBReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodDBReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C047321DF381C200B75CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C047341DF381C200B75CF9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				5472AB8D1DF4EAE500268F94 /* BookScrollViewWidget.swift */,
 				5494A3891DF91F1D00931735 /* BookPreviewCell.swift */,
 				5494A38D1DF91F8400931735 /* BookPreviewCell.xib */,
-				5494A38F1DFE722600931735 /* BookScrollViewWidget.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -328,7 +325,6 @@
 				5494A38E1DF91F8400931735 /* BookPreviewCell.xib in Resources */,
 				54C0473C1DF381C200B75CF9 /* Assets.xcassets in Resources */,
 				54C0473A1DF381C200B75CF9 /* Main.storyboard in Resources */,
-				5494A3901DFE722600931735 /* BookScrollViewWidget.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

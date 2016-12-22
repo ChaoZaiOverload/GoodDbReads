@@ -25,7 +25,7 @@ class Book {
     let jImgUrlStr = (JSON?["images"] as? [String: Any])?["small"] as? String,
       let jImgUrl = URL(string: jImgUrlStr),
     let jRate = Rate(JSON: JSON?["rating"] as? [String : Any]),
-      let jURLStr = JSON?["url"] as? String,
+      let jURLStr = JSON?["alt"] as? String,
       let jURL = URL(string: jURLStr)
       else {
         return nil
