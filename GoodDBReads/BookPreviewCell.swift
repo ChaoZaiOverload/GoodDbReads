@@ -16,7 +16,7 @@ class BookPreviewCell: UICollectionViewCell {
   
   func selectedState(selected: Bool) {
     if selected {
-      self.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1)
+      self.backgroundColor = UIColor(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1)
     } else {
       self.backgroundColor = UIColor.clear
     }

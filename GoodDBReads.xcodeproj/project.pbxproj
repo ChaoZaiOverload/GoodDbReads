@@ -279,7 +279,7 @@
 				TargetAttributes = {
 					54C0472E1DF381C200B75CF9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FJCR5KV53T;
+						DevelopmentTeam = 4ZS9X3A2JW;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -573,6 +573,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -622,7 +623,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -648,10 +650,10 @@
 			baseConfigurationReference = BFB4900B43656C62DE872CED /* Pods-GoodDBReads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FJCR5KV53T;
+				DEVELOPMENT_TEAM = 4ZS9X3A2JW;
 				INFOPLIST_FILE = GoodDBReads/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReads;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyuprojects.gooddbreads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -662,10 +664,10 @@
 			baseConfigurationReference = 75D34766D6A7A9C915FFBD83 /* Pods-GoodDBReads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FJCR5KV53T;
+				DEVELOPMENT_TEAM = 4ZS9X3A2JW;
 				INFOPLIST_FILE = GoodDBReads/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cs.GoodDBReads;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyuprojects.gooddbreads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
